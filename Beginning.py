@@ -10,4 +10,4 @@ if str(ar) == 'y':
     print("Hey, Dhula how r u ?")
 
 else :
-    print("Sorry..!")
+    print("Sorry...!")
