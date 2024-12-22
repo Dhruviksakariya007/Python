@@ -5,3 +5,7 @@ name()
 
 print("Hello", end='')
 print("world")
+
+# Output:
+# Dhruvik
+# Helloworld
