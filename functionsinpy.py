@@ -5,4 +5,3 @@ name()
 
 print("Hello", end='')
 print("world")
-
