@@ -42,4 +42,4 @@ try:
 
 except:
     print("The number was " + str(rnd_number))
-    print("You've lost..!")
+    print("Oops! you lost..!")
