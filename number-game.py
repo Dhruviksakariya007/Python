@@ -44,7 +44,7 @@ try:
                 raise Exception()
             
         else:
-            print("Please enter digits..!\n")
+            print("Please enter a valid digits..!\n")
 
 except:
     print("The number was " + str(rnd_number))
