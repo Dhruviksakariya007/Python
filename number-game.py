@@ -3,49 +3,58 @@ from random import *
 print("Hello, what's your name?")
 print()
 
-name = input("My name is ")
-print()
+while True:
+    
+    name = input("My name is ")
+    print()
+    
 
-print("well, " + name + " i'm thinking of a number between 1 to 20\ntake a guess..!")
-print()
+    if name.isdigit():
+        print("**************** Do not enter digits! Please try again ****************\n")
 
-rnd_number = randint(1, 20)
+    else:
+        print("well, " + name + " i'm thinking of a number between 1 to 20\ntake a guess..!")
+        print()
 
-Guesses_no = 0
+        rnd_number = randint(1, 20)
 
-print("You have only 3 tries...!")
-print()
+        Guesses_no = 0
 
-try:
-    while Guesses_no < 3:
-        guess = input("Gussed number is :- ")
+        print("You have only 3 tries...!")
+        print()
 
-        if guess.isdigit():
+        try:
+            while Guesses_no < 3:
+                guess = input("Gussed number is :- ")
 
-            Guesses_no = Guesses_no + 1
+                if guess.isdigit():
 
-            if int(guess) > rnd_number:
-                print("number is too high")
-                print("Try again..!")
-                print()
+                    Guesses_no += 1
 
-            elif int(guess) < rnd_number:
-                print("Number is too low")
-                print("Try again..!")
-                print()
+                    if int(guess) > rnd_number:
+                        print("number is too high")
+                        print("Try again..!")
+                        print()
 
-            else:
-                print()
-                print("Good job! you've guessed in " + str(Guesses_no) + " try..!")
-                print("That number is " + str(rnd_number))
-                break
+                    elif int(guess) < rnd_number:
+                        print("Number is too low")
+                        print("Try again..!")
+                        print()
 
-            if Guesses_no == 3:
-                raise Exception()
-            
-        else:
-            print("Please enter a valid digits..!\n")
+                    else:
+                        print()
+                        print("Good job! you've guessed in " + str(Guesses_no) + " tries..!")
+                        print("That number is " + str(rnd_number))
+                        break
 
-except:
-    print("The number was " + str(rnd_number))
-    print("Oops! you lost..!")
+                    if Guesses_no == 3:
+                        raise Exception()
+                    
+                else:
+                    print("Please enter a valid digits..!\n")
+
+        except:
+            print("The number was " + str(rnd_number))
+            print("Oops! you lost..!")
+
+        break
