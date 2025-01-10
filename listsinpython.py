@@ -31,17 +31,45 @@ print(spam, "\n")
 looking = input("looking for something ? y/n : ")
 
 if looking == "y":
-    check = input("Enter the value: - ")
+    check = input("Enter the search value: - ")
     if check in spam:
-        print("It's in the list")
+        print("It's in the list\n")
 
     else:
-        print("Oops! Not available in the list !")
+        print("Oops! Not available in the list !\n")
 
 else:
-    print("Cool, You have your results !")
+    print("Cool, You have your results !\n")
 
+print(spam.index("Dhruvik Sakariya"), "\n")
 
+spam.append("DK")
+print(spam, "\n")
 
+spam.insert(0, "0")
+print(spam, "\n")
+
+# sort()
+# sort(reversed = True) 
+
+# .remove("Dhruvik Sakariya") # It will only remove the first value that occurs
+nm = "zophie a cat"
+nm = nm[0:7] + "the" +nm[8:12]
+print(nm, "\n\n")
+
+print("**************** Another Thing ****************")
+
+lis = [1,2,3]
+cp = lis
+print(f"Lis is = {lis}")
+cp.append("New")
+print(f"Lis is = {lis}")
+
+print("****************")
+cpp = lis.copy()
+cpp.append("hl")
+print(f"cpp is = {cpp}")
+print(f"lis is = {lis}")
 
 print("\n\n")
+
