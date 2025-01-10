@@ -35,8 +35,4 @@ animals.setdefault('color', "black")
 print(f'{animals['color']}')
 print(f'{animals}')
 
-
-    
-
-
 print("\n\n")
