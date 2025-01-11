@@ -26,19 +26,9 @@ while True:
         print(f'\nPlayer p1 has \'{p1}\'')
         print(f'Player p2 has \'{p2}\'\n')
 
-        move = True
-
-        if move == True:
-            print(f'Your move P1 ( Follow the rules..! )')
-            print(f'top-, mid-, low- & l,m,r\n')
-            pmove = input("What's your move? P1: ")
-
-        else:
-            print(f'Your move P2 ( Follow the rules..! )')
-            print(f'top-, mid-, low- & l,m,r\n')
-            pmove = input("What's your move? P1: ")
-
-        move = False
+        print(f'Your move P1 ( Follow the rules..! )')
+        print(f'top-, mid-, low- & l,m,r\n')
+        pmove = input("What's your move? P1: ")
 
         if pmove == "top-l":
             board['top-l'] = p1
