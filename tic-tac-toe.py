@@ -73,11 +73,5 @@ while True:
         ttt(p1)
         ttt(p2)             
 
-        # if ' ' in board:
-        #     pass
-
-        # else:
-        #     break
-
     
 
