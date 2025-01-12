@@ -71,7 +71,4 @@ while True:
 
 
         ttt(p1)
-        ttt(p2)             
-
-    
-
+        ttt(p2)
