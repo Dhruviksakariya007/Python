@@ -21,3 +21,7 @@ print(f'Ends with {spam.endswith('d')}')
 lst = ["my", "name", "is", "Dhruvik."]
 
 print(f'{' '.join(lst)}')
+
+name = "DK"
+
+print(f'hello my name is %s'%(name))
