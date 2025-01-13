@@ -52,7 +52,7 @@ def ttt(player):
         print("\n")
         print(f'{board["top-l"]} | {board["top-m"]} | {board["top-r"]}')
         print(f'⎯   ⎯   ⎯')    
-        print(f'{board["mid-l"]} | {board["mid-m"]} | {board["mid-r"]}')
+        print(f'{board["mid-l"]} | {board["mid-m"]}  | {board["mid-r"]}')
         print(f'⎯   ⎯   ⎯')
         print(f'{board["low-l"]} | {board["low-m"]} | {board["low-r"]}\n')
 
